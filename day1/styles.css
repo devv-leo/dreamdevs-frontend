@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #fff;
+    color: #292523;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    min-height: 650px;
+    overflow: hidden;
+}
+
+.panel {
+    width: 50%;
+}
+
+.left-panel {
+    padding: 64px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.icon {
+    width: 36px;
+    height: 36px;
+    border: 2px solid #f7a29f;
+    border-radius: 50%;
+}
+
+.brand-name {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #2a1f1f;
+}
+
+.hero-text .small-title {
+    font-size: 42px;
+    color: #d9a5a5;
+    letter-spacing: 5px;
+    display: block;
+}
+
+.hero-text h1 {
+    font-size: 96px;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    line-height: 1.05;
+    color: #2a1f1f;
+}
+
+.description {
+    max-width: 520px;
+    color: #c78d8d;
+    line-height: 1.6;
+    font-size: 1.12rem;
+}
+
+.email-form {
+    margin-top: 16px;
+    max-width: 520px;
+    display: flex;
+    align-items: center;
+    background: rgba(247, 165, 159, 0.12);
+    border: 1px solid #f7a29f;
+    border-radius: 999px;
+    padding: 8px;
+    box-shadow: 0 16px 20px rgba(247, 149, 145, 0.32);
+}
+
+.email-form input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 16px 18px;
+    font-size: 1rem;
+    color: #4c3a39;
+    outline: none;
+}
+
+.email-form input::placeholder {
+    color: #e7b7b7;
+}
+
+.email-form button {
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff9f9f, #f17f7f);
+    color: #fff;
+    width: 56px;
+    height: 56px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.email-form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 128, 128, 0.35);
+}
+
+.right-panel {
+    position: relative;
+    overflow: hidden;
+}
+
+.right-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        height: auto;
+    }
+
+    .panel {
+        width: 100%;
+    }
+
+    .left-panel {
+        padding: 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 60px;
+    }
+}
+
