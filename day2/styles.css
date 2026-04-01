@@ -104,19 +104,18 @@ body {
     max-width: 540px;
 }
 
-.hero-title {
+.hero-left h1 {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
-    color: #1a1a1a;
     margin-bottom: 20px;
 }
 
-.curved-line {
-  
+.hero-left h1 img {
+    width: 340px;
 }
 
-.hero-description {
+.hero-left p {
     font-size: 18px;
     line-height: 1.6;
     color: #6b6b6b;
@@ -197,3 +196,248 @@ body {
     width: 100%;
     margin-top: 2.5rem;
 }
+
+.support {
+    padding: 80px 0;
+    background: #f8f9fb;
+}
+
+.support-content {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.support-left {
+    flex: 1;
+    max-width: 520px;
+}
+
+.support-left h2 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.support-left p {
+    font-size: 18px;
+    color: #6b6b6b;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.support-ratings {
+    display: flex;
+    gap: 20px;
+}
+
+.rating-card {
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(28, 45, 64, 0.06);
+    width: 100%;
+}
+
+.rating-card-secondary {
+    background: #f6f9ff;
+}
+
+.rating-stars {
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #ffbe2a;
+}
+
+.rating-info {
+    display: flex;
+    gap: 8px;
+    align-items: baseline;
+    margin-bottom: 6px;
+}
+
+.rating-score {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.rating-text {
+    font-size: 16px;
+    color: #6b6b6b;
+}
+
+.rating-company {
+    font-size: 16px;
+    font-weight: 700;
+    color: #8f97a0;
+    text-transform: capitalize;
+}
+
+.support-right {
+    flex: 1;
+}
+
+.features {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.features-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 45px;
+}
+
+.features-header h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 0 0 15px;
+}
+
+.features-header p {
+    color: #6b6b6b;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 560px;
+    margin: 0;
+}
+
+.btn-small {
+    padding: 12px 24px;
+    font-size: 16px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.feature-card {
+    background: #f9fbff;
+    border: 1px solid #eaf0f9;
+    border-radius: 18px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(19, 52, 98, 0.06);
+}
+
+.feature-image {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 18px;
+    margin-bottom: 20px;
+}
+
+.feature-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.feature-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: #6b6b6b;
+    line-height: 1.6;
+}
+
+.feature-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    margin-bottom: 22px;
+    background: #ffffff;
+    border: 1px solid #e5e9f1;
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    margin-top: 4px;
+}
+
+@media (max-width: 1024px) {
+    .hero-content,
+    .support-content {
+        flex-wrap: wrap;
+    }
+
+    .features-header,
+    .support-ratings,
+    .features-grid {
+        grid-template-columns: 1fr;
+        display: block;
+    }
+
+    .features-header {
+        align-items: flex-start;
+    }
+
+    .features-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content,
+    .support-content,
+    .features-grid {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+
+    .hero-left h1,
+    .support-left h2,
+    .features-header h2 {
+        font-size: 30px;
+    }
+
+    .hero-left p,
+    .support-left p,
+    .feature-card p,
+    .features-header p {
+        font-size: 16px;
+    }
+
+    .features-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .features-grid {
+        gap: 16px;
+    }
+}
+
+.feature-item h3 {
+    margin: 0;
+    font-size: 22px;
+    color: #101010;
+}
+
+.feature-item p {
+    margin: 6px 0 0;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
