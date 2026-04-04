@@ -274,9 +274,15 @@ p { color: #A6A6A6}
     flex: 1;
 }
 
+.support-right > div {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    margin-bottom: 38px;
+}
+
 .features {
     padding: 90px 0;
-    background: #ffffff;
 }
 
 .features-header {
@@ -296,7 +302,6 @@ p { color: #A6A6A6}
 }
 
 .features-header p {
-    
     font-size: 18px;
     line-height: 1.6;
     max-width: 560px;
@@ -310,45 +315,17 @@ p { color: #A6A6A6}
     gap: 20px;
 }
 
-.feature-card {
-    background: #f9fbff;
-    border: 1px solid #eaf0f9;
-    border-radius: 18px;
-    padding: 24px;
-    text-align: center;
-    box-shadow: 0 4px 16px rgba(19, 52, 98, 0.06);
-}
-
-.feature-image {
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 18px;
-    margin-bottom: 20px;
-}
-
-.feature-image img {
+.features-grid img {
     width: 100%;
     height: auto;
     display: block;
+    margin-bottom: 30px;
 }
 
-.feature-card h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.features-grid h3 {
+    font-size: 28px;
+    margin: 10px 0;
     color: #1a1a1a;
-}
-
-.feature-card p {
-    font-size: 16px;
-    
-    line-height: 1.6;
-}
-
-.feature-item {
-    display: flex;
-    gap: 16px;
-    align-items: flex-start;
-    margin-bottom: 38px;
 }
 
 .feature-item div:first-child {
